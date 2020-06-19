@@ -20,7 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('shippedDate');
             $table->string('status');
             $table->string('comments');
-            $table->string('customerNumber');
+            $table->string('customer_number');
         });
     }
 

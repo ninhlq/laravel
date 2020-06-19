@@ -14,9 +14,9 @@ class CreateProductslinesTable extends Migration
     public function up()
     {
         Schema::create('productlines', function (Blueprint $table) {
-            $table->increments('productLine');
-            $table->string('textDescription');
-            $table->string('htmlDescription');
+            $table->increments('product_line');
+            $table->string('text_description');
+            $table->string('html_description');
             $table->string('phone');
 
         });

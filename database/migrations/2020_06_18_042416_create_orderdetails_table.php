@@ -15,8 +15,8 @@ class CreateOrderdetailsTable extends Migration
     {
         Schema::create('orderdetails', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('orderNumber');
-            $table->foreignId('productCode');
+            $table->foreignId('order_number');
+            $table->foreignId('product_code');
             $table->string('quantityOrdered');
             $table->string('priceEach');
             $table->string('oderLineNumber');
